@@ -14,7 +14,8 @@ jobs:
     secrets: inherit
     with:
       version_file: "version.py"
-      publish_prerelease: true
+      publish_prerelease: false
+      publish_pypi: false
   build_and_publish_docker:
     needs: publish_alpha_release
     uses: neondaniel/neon_speech/.github/workflows/publish_docker.yml@FIX_SelfHostedDockerBuilder
