@@ -17,7 +17,7 @@ jobs:
       publish_prerelease: true
   build_and_publish_docker:
     needs: publish_alpha_release
-    uses: neongeckocom/.github/.github/workflows/publish_docker.yml@master
+    uses: neondaniel/neon_speech/.github/workflows/publish_docker.yml@FIX_SelfHostedDockerBuilder
     secrets: inherit
     with:
       base_tag: base
